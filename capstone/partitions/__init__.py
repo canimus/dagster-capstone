@@ -5,3 +5,9 @@ country_partition = dg.StaticPartitionsDefinition(
         ","
     )
 )
+
+monthly_partition = dg.MonthlyPartitionsDefinition(start_date="2020-01-01")
+
+dimensional_partition = dg.MultiPartitionsDefinition(
+    partitions_defs={"country": country_partition, "month": monthly_partition}
+)
