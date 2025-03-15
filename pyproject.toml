@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "capstone"
+version = "0.0.1"
+
+authors = [
+  { name="Herminio Vazquez", email="canimus@gmail.com"},
+]
+license = {file = "LICENSE"}
+description = "A sample project that uses the foundation concepts for dagster orchestration"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "toolz >= 1.0.0",
+    "dagster>=1.10.5",
+    "dagster-webserver>=1.10.5",
+    "dagster-duckdb>=0.26.5",
+    "furl>=2.1.4",
+]
+
+[project.optional-dependencies]
+dev = [
+  "black==25.1.0",
+  "ruff==0.9.10",
+  "pre-commit==4.1.0",
+]
+
+[tool.ruff.lint]
+# Skip unused variable rules (`F841`).
+ignore = ["E731"]
