@@ -24,6 +24,7 @@ dependencies = [
     "dagster-duckdb>=0.26.5",
     "furl>=2.1.4",
     "pandas>=2.2.3",
+    "dagster-duckdb-pandas>=0.26.5",
 ]
 
 [project.optional-dependencies]
