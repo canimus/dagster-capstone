@@ -1,7 +1,9 @@
+from typing import List
+
 import requests
 from dagster import ConfigurableResource
-from typing import List
 from furl import furl
+
 
 class OpenHolidaysResource(ConfigurableResource):
     url: str = "https://openholidaysapi.org/"
