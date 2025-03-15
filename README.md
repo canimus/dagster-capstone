@@ -13,3 +13,6 @@ Create the folders as per the recommended dagster tutorials
 Place files in each module under the capstone project to set up all dagster entities.
 
 - `for i in $(ls -1 capstone);do touch "capstone/$i/__init__.py"; done`
+
+## pre-commit hooks
+- `pre-commit install`
