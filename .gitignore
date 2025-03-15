@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 uv.lock
+dagster/
 
 # C extensions
 *.so

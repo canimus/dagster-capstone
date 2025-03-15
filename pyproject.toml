@@ -25,6 +25,8 @@ dependencies = [
     "furl>=2.1.4",
     "pandas>=2.2.3",
     "dagster-duckdb-pandas>=0.26.5",
+    "matplotlib>=3.10.1",
+    "seaborn>=0.13.2",
 ]
 
 [project.optional-dependencies]

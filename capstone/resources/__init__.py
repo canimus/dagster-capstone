@@ -1,8 +1,9 @@
 from typing import List
 
 import requests
-from dagster import ConfigurableResource
 from furl import furl
+
+from dagster import ConfigurableResource
 
 
 class OpenHolidaysResource(ConfigurableResource):
